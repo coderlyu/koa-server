@@ -1,0 +1,9 @@
+POST http://localhost:3000/user/update HTTP/1.1
+content-type: application/json
+
+{
+  "id":"520",
+  "name":"coderly",
+  "intro":"这家伙很懒",
+  "age":"18"
+}

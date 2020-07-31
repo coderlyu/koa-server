@@ -1,0 +1,9 @@
+POST http://localhost:3000/book/update HTTP/1.1
+content-type: application/json
+
+{
+  "id":"250",
+  "name":"Python 21天速成",
+  "publishTime":"2020-2-1",
+  "auth":"coderly"
+}

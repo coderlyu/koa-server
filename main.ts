@@ -5,20 +5,16 @@ import Koa = require('koa')
 import { Context } from 'koa'
 import cors = require('@koa/cors')
 import bodyParser = require('koa-bodyparser')
-
-// 初始化 Koa 应用实例
+import router from './src/router/index'
 const app = new Koa()
-
-// 注册中间件
-app.use(cors()) // 允许跨域
+app.use(cors())
 app.use(bodyParser({}))
+router(app)
 
-// 响应用户请求
 app.use((ctx: Context) => {
   ctx.body = 'Hello Koa'
 })
 
-// 运行服务器
 http.createServer(app.callback()).listen(3000, () => {
   console.log(chalk.blue('server is run at http://localhost:3000'))
   console.log(chalk.blue('server is run at http://127.0.0.1:3000'))

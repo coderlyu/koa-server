@@ -1,0 +1,8 @@
+POST http://localhost:3000/book/create HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Python 21天速成",
+    "publishTime":"2020-2-1",
+    "auth":"coderly"
+}
