@@ -16,6 +16,14 @@
 - 本项目当前连接用户名 `username: root`
 - 本项目当前连接密码 `password: 123456`
 - 本项目当前连接数据库名字 `database: book`
+- 具体使用可以参看官网： <a href="https://typeorm.io/#/" target="_blank">https://typeorm.io/#/</a>
+
+## typeorm
+
+- 根据模型自动创建数据库表
+- 可以透明的插入/更新/删除数据库对象
+- 映射数据库 `table` 到 `Javascript` 对象，映射表列到 `Javascript` 对象属性
+- 提供表的一对一，多对一，一对多，多对多关系处理
 
 ## ormconfig 说明
 
