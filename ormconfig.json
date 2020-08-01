@@ -6,8 +6,8 @@
   "password": "123456",
   "database": "book",
   "synchronize": true,
-  "entities": ["src/entity/*.ts"],
+  "entities": ["src/model/*.ts"],
   "cli": {
-    "entitiesDir": "src/entity"
+    "entitiesDir": "src/model"
   }
 }
